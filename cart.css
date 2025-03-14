@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(229, 229, 229, 1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    background-color: rgba(255, 255, 255, 1);
+    width: 1600px;
+    height: 1200px;
+    justify-content: center;
+}
+
+header {
+    background-color: rgba(47, 47, 47, 1);
+    width: 1600px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.divimg {
+    width: 95px;
+    height: 56px;
+}
+
+.divimg img {
+    margin-top: 10px;
+}
+
+.box1 {
+    width: 1149px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1 .ul1 {
+    display: flex;
+    align-items: center;
+}
+
+.licart {
+    position: relative;
+}
+
+.spanCount {
+    background-color: red;
+    color: #fafafa;
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    padding: 0 5px; 
+    border-radius: 100%;
+}
+
+.box1 .ul1 li a {
+    margin-left: 40px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: "Poppins", serif;
+    transition: color .3s;
+}
+
+.box1 .ul1 li a:hover {
+    color: rgba(245, 155, 0, 1);
+}
+
+.bt {
+    background-color: rgba(245, 155, 0, 1);
+    width: 150px;
+    height: 56px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 90px;
+}
+
+.bt a {
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-family: "Poppins";
+    padding: 15px 30px;
+}
+
+.titleCart {
+    color: rgb(21, 21, 21);
+    position: absolute;
+    top: 120px;
+    width: 100%;
+    height: 30px;
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.cartsbg {
+    position: absolute;
+    top: 160px;
+    width: 605px;
+}
+
+.cart {
+    overflow: hidden;
+    width: 605px;
+    min-height: 0px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 5px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+.newcart {
+    background-color: rgba(135, 207, 235, 0.39);
+    width: 600px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.imgcart {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+}
+
+.titlecart {
+    color: #353333;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.pricecart {
+    color: #980505;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.counts {
+    background-color: rgb(231, 231, 231);
+    width: 70px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.spanMinus, .spanPlus {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    transition: all .4s;
+}
+
+.spanMinus:hover {
+    background-color: #cdc8c8;
+}
+
+.spanPlus:hover {
+    background-color: #cdc8c8;
+}
+
+.spanMinus {
+    border-right: 1px solid rgba(0, 0, 0, 0.144);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.spanPlus {
+    border-left: 1px solid rgba(0, 0, 0, 0.144);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.btclosed {
+    background-color: #eee9e9;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    transition: all .4s;
+}
+
+.btclosed:hover {
+    background-color: #cdc8c8;
+}
+
+.total {
+    margin-top: 5px;
+    width: 605px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    column-gap: 10px;
+}
+
+.textTotal {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.spanPrice {
+    margin-right: 15px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(47, 47, 47, 0.92);
+    width: 1600px;
+    height: 368px;
+}
+
+.box10 {
+    margin-left: 226px;
+    margin-top: 97px;
+    width: 1147px;
+    height: 175px;
+    display: grid;
+    grid-template-columns: 224px 192px 245px 264px;
+    column-gap: 74px;
+}
+
+.div00 {
+    height: 175px;
+}
+
+.div001 p {
+    margin-top: 20px;
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    font-family: "Poppins";
+    line-height: 190%;
+}
+
+.div002 h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.div002 .pp {
+    margin-top: 20px;
+}
+
+.div002 p {
+    margin-top: 10px;
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    font-family: "Poppins";
+    line-height: 150%;
+}
+
+.div003 h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.div003 .pp {
+    margin-top: 20px;
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    font-family: "Poppins";
+    line-height: 150%;
+}
+
+.div003 p a {
+    color: rgb(179, 179, 179);
+}
+
+.div003 p {
+    margin-top: 10px;
+    color: rgb(179, 179, 179);
+    font-size: 16px;
+    font-family: "Poppins";
+    line-height: 150%;
+}
+
+.div004 h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.div004 h2 {
+    color: rgba(255, 255, 255, 1);
+}
+
+.div004 input {
+    background: transparent;
+    margin-top: 20px;
+    width: 244px;
+    height: 49px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    color: #ffc20c;
+    font-size: 20px;
+    border: 1px solid rgba(176, 169, 169, 1);
+}
+
+.div004 .bt6 {
+    margin-top: 30px;
+    background-color: rgba(245, 155, 0, 1);
+    width: 120px;
+    height: 48px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bt6 a {
+    color: #fafafa;
+    font-size: 16px;
+    font-family: "Poppins";
+    padding: 10px 20px;
+}
+
+
+
+
+
+
+
+
+
+
